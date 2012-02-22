@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/acp-menu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.ircservice">
+			<icon>icon/ircServiceL.png</icon>
+		</acpmenuitem>
+			<acpmenuitem name="wcf.acp.menu.link.ircservice.eggdrop">
+				<parent>wcf.acp.menu.link.ircservice</parent>
+			</acpmenuitem>
+				<acpmenuitem name="wcf.acp.menu.link.ircservice.eggdrop.list">
+					<parent>wcf.acp.menu.link.ircservice.eggdrop</parent>
+					<icon>icon/ircServiceEggdropM.png</icon>
+					<link>index.php?page=IRCServiceEggdropList</link>
+					<showorder>1</showorder>
+				</acpmenuitem>
+				<acpmenuitem name="wcf.acp.menu.link.ircservice.eggdrop.add">
+					<parent>wcf.acp.menu.link.ircservice.eggdrop</parent>
+					<icon>icon/ircServiceEggdropAddM.png</icon>
+					<link>index.php?form=IRCServiceEggdropAdd</link>
+					<showorder>2</showorder>
+					<permissions>admin.ircservice.canAddEggdrop</permissions>
+				</acpmenuitem>
+	</import>
+</data>

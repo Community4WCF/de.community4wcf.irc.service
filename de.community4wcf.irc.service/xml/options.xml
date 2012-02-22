@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="ircService">
+				<!--<options>module_ircservice</options>-->
+			</category>
+
+			<category name="ircService.general">
+				<parent>ircService</parent>
+				<showorder>1</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="ircservice_general_message">
+				<categoryname>ircService.general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[Mitteilung folgt... [code]http://irc.european-network.eu/index.php?page=IRCServiceReadDatas&uniqueID=DEINEuniqueID[/code]]]></defaultvalue>
+				<showorder>11</showorder>
+			</option>
+			<option name="ircservice_general_message_allow_html">
+				<categoryname>ircService.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>12</showorder>
+			</option>
+			<option name="ircservice_general_message_enable_bbcodes">
+				<categoryname>ircService.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>13</showorder>
+			</option>
+			<option name="ircservice_general_message_enable_smiley">
+				<categoryname>ircService.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>14</showorder>
+			</option>
+
+			<option name="module_ircservice">
+				<categoryname>module.content</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

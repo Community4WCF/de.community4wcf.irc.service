@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.ircservice.canAddEggdrop"><![CDATA[Kann Eggdrop anlegen]]></item>
+		<item name="wcf.acp.group.option.admin.ircservice.canAddEggdrop.description"><![CDATA[Mitglieder dieser Gruppe dürfen Eggdrop anlegen]]></item>
+		<item name="wcf.acp.group.option.admin.ircservice.canDeleteEggdrop"><![CDATA[Kann Eggdrop löschen]]></item>
+		<item name="wcf.acp.group.option.admin.ircservice.canDeleteEggdrop.description"><![CDATA[Mitglieder dieser Gruppe dürfen Eggdrop löschen]]></item>
+		<item name="wcf.acp.group.option.admin.ircservice.canEditEggdrop"><![CDATA[Kann Eggdrop bearbeiten]]></item>
+		<item name="wcf.acp.group.option.admin.ircservice.canEditEggdrop.description"><![CDATA[Mitglieder dieser Gruppe dürfen Eggdrop bearbeiten]]></item>
+		<item name="wcf.acp.group.option.category.admin.ircservice"><![CDATA[IRC Service]]></item>
+		<item name="wcf.acp.group.option.category.admin.ircservice.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.admin.ircservice.eggdrop"><![CDATA[Eggdrop]]></item>
+		<item name="wcf.acp.group.option.category.admin.ircservice.eggdrop.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.user.ircservice"><![CDATA[IRC Service]]></item>
+		<item name="wcf.acp.group.option.category.user.ircservice.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.user.ircservice.canOrder"><![CDATA[Kann IRC Service bestellen]]></item>
+		<item name="wcf.acp.group.option.user.ircservice.canOrder.description"><![CDATA[Mitglieder dieser Gruppe dürfen IRC Service bestellen]]></item>
+		<item name="wcf.acp.group.option.user.ircservice.canView"><![CDATA[Kann IRC Service aufrufen]]></item>
+		<item name="wcf.acp.group.option.user.ircservice.canView.description"><![CDATA[Mitglieder dieser Gruppe dürfen IRC Service aufrufen]]></item>
+	</category>
+	<category name="wcf.acp.ircServiceEggdrop">
+		<item name="wcf.acp.ircServiceEggdrop"><![CDATA[Es sind insgesamt {if $items == 1}ein{else}{#$items}{/if} {if $items == 1}Eggdrop{else}s{/if} vorhanden.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.add"><![CDATA[Eggdrop hinzufügen]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.add.success"><![CDATA[Eggdrop wurde erfolgreich hinzugefügt.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.delete"><![CDATA[Eggdrop löschen]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.delete.success"><![CDATA[Eggdrop wurde erfolgreich gelöscht.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.delete.sure"><![CDATA[Eggdrop wirklich löschen?]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.edit"><![CDATA[Eggdrop bearbeiten]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.edit.success"><![CDATA[Eggdrop wurde erfolgreich bearbeitet.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.eggdropID"><![CDATA[ID]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.eggdropName"><![CDATA[Name]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.eggdropName.description"><![CDATA[]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.empty"><![CDATA[Es sind keine Eggdrops eingetragen.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.global.daten"><![CDATA[Allgemeine Daten]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.host"><![CDATA[Host]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.host.description"><![CDATA[]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.list"><![CDATA[Eggdrop Übersicht]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.loginName"><![CDATA[Login Name]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.loginName.description"><![CDATA[Login Name für Telnet]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.loginPassword"><![CDATA[Login Password]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.loginPassword.description"><![CDATA[Login Password für Telnet]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.maxCount"><![CDATA[Max Channel]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.maxCount.description"><![CDATA[Wieviel Channels darf der Eggdrop maximal gleichzeitig verwalten.]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.port"><![CDATA[Port]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.port.description"><![CDATA[]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.serverAddress"><![CDATA[ServerAddress]]></item>
+		<item name="wcf.acp.ircServiceEggdrop.serverAddress.description"><![CDATA[Daten müssen mit den aus der TCL Datei für diesen Eggdrop gleich sein. ServerAddress dient als zuordnung.]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.ircservice"><![CDATA[IRC Service]]></item>
+		<item name="wcf.acp.menu.link.ircservice.eggdrop"><![CDATA[Eggdrop]]></item>
+		<item name="wcf.acp.menu.link.ircservice.eggdrop.add"><![CDATA[Eggdrop hinzufügen]]></item>
+		<item name="wcf.acp.menu.link.ircservice.eggdrop.list"><![CDATA[Eggdrops auflisten]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.ircService"><![CDATA[IRC Services]]></item>
+		<item name="wcf.acp.option.category.ircService.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.ircService.general"><![CDATA[Übersicht]]></item>
+		<item name="wcf.acp.option.category.ircService.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.ircservice_general_message"><![CDATA[Übersicht Mitteilung]]></item>
+		<item name="wcf.acp.option.ircservice_general_message.description"><![CDATA[Eine Nachricht/ein Hinweis, der auf der IRC Service Übersichts-Seite angezeigt wird]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_allow_html"><![CDATA[HTML-Code im Hinweistext verwenden]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_allow_html.description"><![CDATA[Durch Aktivierung dieser Option können Sie zur Formatierung des Textes auch HTML verwenden.]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_enable_bbcodes"><![CDATA[BBCodes verwenden]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_enable_bbcodes.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_enable_smiley"><![CDATA[Smilies verwenden]]></item>
+		<item name="wcf.acp.option.ircservice_general_message_enable_smiley.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.module_ircservice"><![CDATA[IRC Service aktivieren]]></item>
+		<item name="wcf.acp.option.module_ircservice.description"><![CDATA[Aktivieren Sie diese Option, um IRC Service zu aktivieren.]]></item>
+	</category>
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.ircservice"><![CDATA[IRC Service]]></item>
+	</category>
+	<category name="wcf.ircService">
+		<item name="wcf.ircService.activate"><![CDATA[IRC Service Aktivieren]]></item>
+		<item name="wcf.ircService.activate.code"><![CDATA[Code]]></item>
+		<item name="wcf.ircService.activate.code.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.activate.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.activate.error"><![CDATA[Der eingegebende Code ist Falsch.]]></item>
+		<item name="wcf.ircService.activate.success"><![CDATA[Ihr Service wurde für Sie aktiviert. Bitte laden Sie noch den Client runter und Installieren Sie diesen.]]></item>
+		<item name="wcf.ircService.activate.userID"><![CDATA[UserID]]></item>
+		<item name="wcf.ircService.activate.userID.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.channel"><![CDATA[Channel]]></item>
+		<item name="wcf.ircService.channel.description"><![CDATA[Geben Sie hier Ihren gewünschten Channel an.]]></item>
+		<item name="wcf.ircService.channel.double"><![CDATA[Dieser Channel wird auf diesen Server schon verwendet.]]></item>
+		<item name="wcf.ircService.eggdrop"><![CDATA[Auswahl]]></item>
+		<item name="wcf.ircService.eggdrop.description"><![CDATA[Wählen Sie einen verfügbaren Eggdrop aus.]]></item>
+		<item name="wcf.ircService.filter"><![CDATA[Channel Filter]]></item>
+		<item name="wcf.ircService.filter.aktiv"><![CDATA[Aktive Filter]]></item>
+		<item name="wcf.ircService.filter.description"><![CDATA[Channel: {$channelname}]]></item>
+		<item name="wcf.ircService.filter.remove"><![CDATA[Filter löschen]]></item>
+		<item name="wcf.ircService.filter.remove.sure"><![CDATA[Filter löschen?]]></item>
+		<item name="wcf.ircService.filter.title"><![CDATA[Filter hinzufügen]]></item>
+		<item name="wcf.ircService.filter.value"><![CDATA[Filter]]></item>
+		<item name="wcf.ircService.filter.value.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.general"><![CDATA[IRC Service Übersicht]]></item>
+		<item name="wcf.ircService.menu"><![CDATA[Menü]]></item>
+		<item name="wcf.ircService.menu.general"><![CDATA[Übersicht]]></item>
+		<item name="wcf.ircService.menu.my"><![CDATA[Mein IRC Service]]></item>
+		<item name="wcf.ircService.menu.order"><![CDATA[Bestellen]]></item>
+		<item name="wcf.ircService.my"><![CDATA[Mein IRC Service]]></item>
+		<item name="wcf.ircService.my.account"><![CDATA[Account Information]]></item>
+		<item name="wcf.ircService.my.account.disabled"><![CDATA[Status]]></item>
+		<item name="wcf.ircService.my.account.disabled.no"><![CDATA[Gesperrt]]></item>
+		<item name="wcf.ircService.my.account.disabled.yes"><![CDATA[Aktiv]]></item>
+		<item name="wcf.ircService.my.account.uniqueID"><![CDATA[uniqueID]]></item>
+		<item name="wcf.ircService.my.channel"><![CDATA[Channel Übersicht]]></item>
+		<item name="wcf.ircService.my.channel.action"><![CDATA[]]></item>
+		<item name="wcf.ircService.my.channel.action.delete"><![CDATA[Löschen]]></item>
+		<item name="wcf.ircService.my.channel.action.delete.success"><![CDATA[Channel wurde erfolgreich gelöscht.]]></item>
+		<item name="wcf.ircService.my.channel.action.delete.sure"><![CDATA[Möchten Sie diesen Channel wirklich löschen?]]></item>
+		<item name="wcf.ircService.my.channel.action.disabled.no"><![CDATA[Deaktivieren]]></item>
+		<item name="wcf.ircService.my.channel.action.disabled.yes"><![CDATA[Aktivieren]]></item>
+		<item name="wcf.ircService.my.channel.action.filter"><![CDATA[Filter]]></item>
+		<item name="wcf.ircService.my.channel.action.sendCodeAgain"><![CDATA[Code nochmal senden]]></item>
+		<item name="wcf.ircService.my.channel.action.sendCodeAgain.success"><![CDATA[Code wurde zugesandt.]]></item>
+		<item name="wcf.ircService.my.channel.channel"><![CDATA[Channel]]></item>
+		<item name="wcf.ircService.my.channel.disabled"><![CDATA[Status]]></item>
+		<item name="wcf.ircService.my.channel.disabled.no"><![CDATA[nicht Aktiv]]></item>
+		<item name="wcf.ircService.my.channel.disabled.yes"><![CDATA[Aktiv]]></item>
+		<item name="wcf.ircService.my.channel.eggdrop"><![CDATA[Server]]></item>
+		<item name="wcf.ircService.my.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.my.noAccount"><![CDATA[Keine Daten vorhanden.]]></item>
+		<item name="wcf.ircService.order"><![CDATA[IRC Service Bestellen]]></item>
+		<item name="wcf.ircService.order.description"><![CDATA[]]></item>
+		<item name="wcf.ircService.order.general"><![CDATA[Allgemeine Angaben]]></item>
+		<item name="wcf.ircService.order.mail.subject"><![CDATA[IRC Service Bestellung]]></item>
+		<item name="wcf.ircService.order.mail.text"><![CDATA[Hallo {$username},
+
+vielen Dank für Ihre Bestellung.
+
+Bitte bestätigen Sie noch Ihre Bestellung, 
+damit für Sie der IRC Service in vollen Umfang zur Verfügung steht.
+
+Bestätigungslink: {PAGE_URL}/index.php?form=IRCServiceActivate&userID={$userID}&code={$code}
+
+Sollte der Link nicht funktionieren, so geben Sie in der Adressleiste folgende URL ein
+{PAGE_URL}/index.php?form=IRCServiceActivate
+
+und geben folgende Daten ein
+UserID: {$userID}
+Code: {$code}
+
+
+Mit freundlichen Grüßen
+
+Ihr {PAGE_TITLE} Team]]></item>
+		<item name="wcf.ircService.order.noAccess"><![CDATA[Sie haben keine Berechtigung zu Bestellen.]]></item>
+		<item name="wcf.ircService.order.noLogin"><![CDATA[Sie müssen eingeloggt sein um eine Bestellung zu tätigen.]]></item>
+		<item name="wcf.ircService.order.success"><![CDATA[Vielen Dank für Ihre Bestellung. Sie erhalten in kürze eine E-Mail.]]></item>
+		<item name="wcf.ircService.title"><![CDATA[IRC Services]]></item>
+		<item name="wcf.ircService.title.description"><![CDATA[]]></item>
+	</category>
+</language>

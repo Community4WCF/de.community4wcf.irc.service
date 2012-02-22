@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.community4wcf.irc.service" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[IRC Service]]></packagename>
+		<packagename language="de"><![CDATA[IRC Service]]></packagename>
+		<packagename language="de-informal"><![CDATA[IRC Service]]></packagename>
+		<packagedescription><![CDATA[Serverversion, Exclusive for European-Network IRC]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Serverversion, Exclusive for European-Network IRC]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Serverversion, Exclusive for European-Network IRC]]></packagedescription>
+		<packageurl><![CDATA[http://community4wcf.de]]></packageurl>
+		<isunique>1</isunique>
+		<version>1.0.1 pl12</version>
+		<date>2011-01-29</date>
+		<plugin>com.woltlab.wcf</plugin>
+	</packageinformation>
+
+	<!-- Icons by Everaldo: Crystal Project: http://www.everaldo.com/crystal/ -->
+	
+	<licenseinformation>
+		<license><![CDATA[Exclusive for European-Network IRC]]></license>
+		<licenseURL><![CDATA[http://irc.european-network.eu/]]></licenseURL>
+	</licenseinformation>
+	<authorinformation>
+		<author><![CDATA[Marco Daries]]></author>
+		<authorurl><![CDATA[http://mada-network.de]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="1.1.8">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<!-- files -->
+		<acptemplates>acptemplates.tar</acptemplates>
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+		<sql>install.sql</sql>
+		<!-- config -->
+		<acpmenu>xml/acpmenu.xml</acpmenu>
+		<groupoptions>xml/groupoptions.xml</groupoptions>
+		<options>xml/options.xml</options>
+		<pagemenu>xml/pagemenu.xml</pagemenu>
+		<!-- languages -->
+		<languages languagecode="de">xml/de.xml</languages>
+		<!--
+		<languages languagecode="de-informal">xml/de-informal.xml</languages>
+		<languages languagecode="en">xml/en.xml</languages>
+		-->
+	</instructions>
+</package>
