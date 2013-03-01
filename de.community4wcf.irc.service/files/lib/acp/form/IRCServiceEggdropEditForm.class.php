@@ -16,7 +16,7 @@ class IRCServiceEggdropEditForm extends IRCServiceEggdropAddForm {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['eggdropID'])) $this->eggdropID = intval($_REQUEST['eggdropID']);
+		if (isset($_REQUEST['eggdropID'])) $this->eggdropID = escapeString(intval($_REQUEST['eggdropID']));
 		$this->eggdrop = new IRCServiceEggdropEditor($this->eggdropID);
 		if (!$this->eggdrop->eggdropID) {
 			throw new IllegalLinkException();

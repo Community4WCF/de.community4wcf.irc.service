@@ -17,7 +17,7 @@ class IRCServiceReadDatasPage extends AbstractPage {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['uniqueID'])) $this->uniqueID = StringUtil::trim($_REQUEST['uniqueID']); 
+		if (isset($_REQUEST['uniqueID'])) $this->uniqueID = escapeString(StringUtil::trim($_REQUEST['uniqueID'])); 
 		
 		$this->checkUniqueID();
 		if($this->userID) {

@@ -19,7 +19,7 @@ class IRCServiceEggdropListPage extends SortablePage {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['deleteedeggdropID'])) $this->deleteedeggdropID = intval($_REQUEST['deleteedeggdropID']);
+		if (isset($_REQUEST['deleteedeggdropID'])) $this->deleteedeggdropID = escapeString(intval($_REQUEST['deleteedeggdropID']));
 		
 		$this->eggdropsList = new IRCServiceEggdropList();
 	}

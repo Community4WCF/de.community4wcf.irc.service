@@ -16,7 +16,7 @@ class IRCServiceEggdropDeleteAction extends AbstractAction {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['eggdropID'])) $this->eggdropID = intval($_REQUEST['eggdropID']);
+		if (isset($_REQUEST['eggdropID'])) $this->eggdropID = escapeString(intval($_REQUEST['eggdropID']));
 
 	}
 	

@@ -23,8 +23,8 @@ class IRCServiceActivateForm extends AbstractForm {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['code'])) $this->code = intval($_REQUEST['code']);
-		if (isset($_REQUEST['userID'])) $this->userID = intval($_REQUEST['userID']);
+		if (isset($_REQUEST['code'])) $this->code = escapeString(intval($_REQUEST['code']));
+		if (isset($_REQUEST['userID'])) $this->userID = escapeString(intval($_REQUEST['userID']));
 
 	}
 		

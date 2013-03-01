@@ -18,8 +18,8 @@ class IRCServiceStatusAction extends AbstractAction {
 	public function readParameters() {
 		parent::readParameters();
 						
-		if (isset($_REQUEST['chanID'])) $this->chanID = intval($_REQUEST['chanID']);
-		if (isset($_REQUEST['disabled'])) $this->disabled = intval($_REQUEST['disabled']);
+		if (isset($_REQUEST['chanID'])) $this->chanID = escapeString(intval($_REQUEST['chanID']));
+		if (isset($_REQUEST['disabled'])) $this->disabled = escapeString(intval($_REQUEST['disabled']));
 		
 		$this->service = new IRCServiceChannelEditor($this->chanID, WCF::getUser()->userID);	
 		if (!$this->service->chanID) {

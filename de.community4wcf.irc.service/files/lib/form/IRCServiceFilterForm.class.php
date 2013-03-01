@@ -21,7 +21,7 @@ class IRCServiceFilterForm extends AbstractForm {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['chanID'])) $this->chanID = intval($_REQUEST['chanID']);
+		if (isset($_REQUEST['chanID'])) $this->chanID = escapeString(intval($_REQUEST['chanID']));
 		
 		$this->chan = new IRCServiceChannelEditor($this->chanID, WCF::getUser()->userID);
 		if (!$this->chan->chanID) {

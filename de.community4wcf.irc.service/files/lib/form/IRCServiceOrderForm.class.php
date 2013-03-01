@@ -21,8 +21,8 @@ class IRCServiceOrderForm extends AbstractForm {
 	public function readFormParameters() {
 		parent::readFormParameters();
 		
-		if (isset($_POST['eggdropID'])) $this->eggdropID = intval($_POST['eggdropID']);
-		if (isset($_POST['channel'])) $this->channel = StringUtil::trim($_POST['channel']); 
+		if (isset($_POST['eggdropID'])) $this->eggdropID = escapeString(intval($_POST['eggdropID']));
+		if (isset($_POST['channel'])) $this->channel = escapeString(StringUtil::trim($_POST['channel'])); 
 		
 		if(substr($this->channel, 0, 1) !== "#") $this->channel = "#".$this->channel;
 

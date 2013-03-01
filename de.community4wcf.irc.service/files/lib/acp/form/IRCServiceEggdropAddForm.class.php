@@ -28,13 +28,13 @@ class IRCServiceEggdropAddForm extends ACPForm {
 	public function readFormParameters() {
 		parent::readFormParameters();
 		
-		if (isset($_POST['eggdropName'])) $this->eggdropName = StringUtil::trim($_POST['eggdropName']);
-		if (isset($_POST['host'])) $this->host = StringUtil::trim($_POST['host']);
-		if (isset($_POST['port'])) $this->port = intval($_POST['port']);
-		if (isset($_POST['serverAddress'])) $this->serverAddress = StringUtil::trim($_POST['serverAddress']);
-		if (isset($_POST['loginName'])) $this->loginName = StringUtil::trim($_POST['loginName']);
-		if (isset($_POST['loginPassword'])) $this->loginPassword = StringUtil::trim($_POST['loginPassword']);
-		if (isset($_POST['maxCount'])) $this->maxCount = intval($_POST['maxCount']);
+		if (isset($_POST['eggdropName'])) $this->eggdropName = escapeString(StringUtil::trim($_POST['eggdropName']));
+		if (isset($_POST['host'])) $this->host = escapeString(StringUtil::trim($_POST['host']));
+		if (isset($_POST['port'])) $this->port = escapeString(intval($_POST['port']));
+		if (isset($_POST['serverAddress'])) $this->serverAddress = escapeString(StringUtil::trim($_POST['serverAddress']));
+		if (isset($_POST['loginName'])) $this->loginName = escapeString(StringUtil::trim($_POST['loginName']));
+		if (isset($_POST['loginPassword'])) $this->loginPassword = escapeString(StringUtil::trim($_POST['loginPassword']));
+		if (isset($_POST['maxCount'])) $this->maxCount = escapeString(intval($_POST['maxCount']));
 		
 	}
 	

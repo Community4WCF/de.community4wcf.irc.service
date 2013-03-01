@@ -21,8 +21,8 @@ class IRCServiceMyPage extends AbstractPage {
 	public function readParameters() {
 		parent::readParameters();
 		
-		if (isset($_REQUEST['successCode'])) $this->successCode = intval($_REQUEST['successCode']);
-		if (isset($_REQUEST['successDelete'])) $this->successDelete = intval($_REQUEST['successDelete']);
+		if (isset($_REQUEST['successCode'])) $this->successCode = escapeString(intval($_REQUEST['successCode']));
+		if (isset($_REQUEST['successDelete'])) $this->successDelete = escapeString(intval($_REQUEST['successDelete']));
 		
 		$this->readUserInfos();
 		if($this->userInfos->userID != 0) $this->readChannels();
